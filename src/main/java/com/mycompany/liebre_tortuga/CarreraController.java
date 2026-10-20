@@ -57,15 +57,12 @@ public class CarreraController implements Initializable {
         lblLiebre.setText("La Liebre: ¡Está corriendo!");
         lblTortuga.setText("La Tortuga: ¡Está corriendo!");
 
-        // La velocidad de cada participante es aleatoria
         final int velocidadLiebre = 40 + azar.nextInt(101);
         final int velocidadTortuga = 70 + azar.nextInt(101);
 
-        // La liebre puede dormirse entre el 20 % y el 70 %
         final double puntoDormir =
                 (20 + azar.nextInt(51)) / 100.0;
 
-        // La liebre puede dormir entre 1 y 5 segundos
         final int tiempoDormir =
                 1000 + azar.nextInt(4001);
 
