@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.liebre_tortuga.CarreraController">
+    <padding>
+        <Insets bottom="30.0" left="40.0" right="40.0" top="30.0" />
+    </padding>
+
+    <!-- Título principal -->
+    <Label>
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+
+    <!-- Botón de inicio -->
+    <Button fx:id="btnIniciar" layoutX="235.0" layoutY="93.0" mnemonicParsing="false" onAction="#iniciarCarrera" text="¡Iniciar Carrera!">
+      <font>
+         <Font size="18.0" />
+      </font></Button>
+
+    <!-- Sección de la Liebre -->
+    <VBox alignment="CENTER_LEFT" layoutX="111.0" layoutY="164.0" spacing="6.0">
+        <Label fx:id="lblLiebre" alignment="CENTER" prefHeight="27.0" prefWidth="410.0" text="La Liebre: ¡Preparados!">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <ProgressBar fx:id="progressLiebre" prefHeight="38.0" prefWidth="420.0" progress="0.0" />
+    </VBox>
+
+    <!-- Sección de la Tortuga -->
+    <VBox alignment="CENTER_LEFT" layoutX="111.0" layoutY="251.0" prefHeight="72.0" prefWidth="420.0" spacing="6.0">
+        <Label fx:id="lblTortuga" alignment="CENTER" prefHeight="27.0" prefWidth="412.0" text="La Tortuga: ¡Preparados!">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <ProgressBar fx:id="progressTortuga" prefHeight="34.0" prefWidth="420.0" progress="0.0" />
+    </VBox>
+   <Label layoutX="222.0" layoutY="44.0" text="La Liebre y la Tortuga">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+</AnchorPane>
